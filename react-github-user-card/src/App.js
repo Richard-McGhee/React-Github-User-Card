@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import UserCards from './Components/UserCards';
 
 class App extends React.Component{
   constructor() {
@@ -11,7 +12,7 @@ class App extends React.Component{
   render() {
     return (
       <div className="App">
-        <h1>placeholder</h1>
+        <UserCards />
       </div>
     );
   }
