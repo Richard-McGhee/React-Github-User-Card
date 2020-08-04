@@ -1,6 +1,6 @@
 import React from 'react';
 
-class UserCards extends Component {
+class UserCards extends React.Component {
     state = {  }
     render() { 
         return ( 
