@@ -4,8 +4,11 @@ import { Link, Route } from 'react-router-dom'
 import App from "../App"
 
 class Followers extends React.Component{
-    state = {
+    constructor(props) {
+      super(props)
+      this.state = {
         followers: {}
+      }
     }
     componentDidMount() {
         axios.get("https://api.github.com/users/richard-mcghee/followers")

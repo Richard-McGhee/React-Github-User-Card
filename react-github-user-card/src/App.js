@@ -40,7 +40,7 @@ class App extends React.Component{
       <BrowserRouter>
         <UserCards user={this.state.user} followers={this.state.followers} />
         <Link to="/followers">My Followers... that I don't have</Link>
-        <Route path="/followers" component={Followers} />
+        <Route path="/followers" > <Followers followers={this.state.followers}/> </Route>
       </BrowserRouter>
     );
   }
