@@ -6,9 +6,20 @@ class App extends React.Component{
   constructor() {
     super()
     this.state = {
-      users: []
+      user: []
     }
   }
+
+  componentDidMount() {
+    axios.get("https://api.github.com/users/richard-mcghee")
+    .then((res) => {
+      console.log(res)
+    })
+    .catch((err) => {
+      console.dir(err)
+    })
+  }
+
   render() {
     return (
       <div className="App">
