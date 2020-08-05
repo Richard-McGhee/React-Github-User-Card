@@ -1,12 +1,13 @@
 import React from 'react';
 
-class UserCards extends React.Component {
-    state = {  }
-    render() { 
-        return ( 
-            <h1>placeholder</h1>
-        );
-    }
+const UserCards = props => {
+ return ( 
+    <div className="cardHolder">
+        <h1>{props.user.login}</h1>
+        <img src={props.user.avatar_url} alt="A gorgeous dude" /><br/>
+        <a href={props.user.url}>{props.user.url}</a><br/>
+    </div>
+ );
 }
- 
-export default UserCards;
+
+export default UserCards
